@@ -19,7 +19,8 @@ namespace AvatarStatsLoader.BoneMenu
             incrementPointOne = MakeIncrement(menu, 0.1f, entry);
             incrementPointZeroOne = MakeIncrement(menu, 0.01f, entry);
             incrementPointZeroZeroOne = MakeIncrement(menu, 0.01f, entry);
-            setToOne = menu.CreateFunction("Set to 1.0", Color.white, () => entry.Value = 1.0f);
+            setToOne = menu.CreateFunction("Set to 89.0", Color.white, () => entry.Value = 89.0f);
+            setToOne = menu.CreateFunction("Set to 100.0", Color.white, () => entry.Value = 100.0f);
             loadFromAvatar = menu.CreateFunction("Load from avatar's loaded value", Color.white, () => entry.Value = getFromLoaded.Invoke());
             loadFromAvatarCalculated = menu.CreateFunction("Load from avatar's computed value", Color.white, () => entry.ResetToDefault());
             entry.OnEntryValueChanged.Subscribe((prev, cur) =>
